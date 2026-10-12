@@ -1,28 +1,32 @@
-/* Cores e fontes do design system da Drip Store (Figma) */
+/* Identidade visual da Vitor Imports: monocromática, estilo streetwear */
 :root {
-  --primary: #c92071;
-  --secondary: #b5b6f2;
-  --tertiary: #efefff;
-  --error: #ee4266;
-  --success: #52ca76;
-  --warning: #f6aa1c;
+  --primary: #0d0d0d;
+  --background: #f4f4f2;
+  --surface: #ebe8e2;
+  --error: #c8102e;
+  --success: #2e7d32;
   --dark-gray: #1f1f1f;
   --dark-gray-2: #474747;
   --dark-gray-3: #666666;
   --light-gray: #8f8f8f;
-  --light-gray-2: #cccccc;
-  --light-gray-3: #f5f5f5;
+  --light-gray-2: #d6d2ca;
   --white: #ffffff;
 
   font-family: "Inter", system-ui, sans-serif;
   color: var(--dark-gray-2);
-  background: var(--light-gray-3);
+  background: var(--background);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary);
 }
 
 a {

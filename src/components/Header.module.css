@@ -9,26 +9,24 @@
   justify-content: space-between;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 24px 100px;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary);
+  padding: 20px 100px;
 }
 
 .menu {
   display: flex;
   gap: 32px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .menu a {
+  padding-bottom: 4px;
   color: var(--dark-gray-2);
 }
 
 .menu a:global(.active) {
   color: var(--primary);
-  font-weight: 700;
-  text-decoration: underline;
+  border-bottom: 2px solid var(--primary);
 }

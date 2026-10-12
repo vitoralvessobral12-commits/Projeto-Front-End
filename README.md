@@ -1,16 +1,72 @@
-# React + Vite
+# Digital Store (Drip Store)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto Front-end de e-commerce desenvolvido no curso de Desenvolvimento Web da Digital College,
+baseado no [design do Figma](https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=22-30)
+e na [documentação oficial](https://github.com/digitalcollegebr/projeto-digital-store).
 
-Currently, two official plugins are available:
+A aplicação é 100% front-end e consome uma API de treino ([DummyJSON](https://dummyjson.com))
+para exibir produtos e imagens.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Deploy
 
-## React Compiler
+🔗 _Em breve:_ `https://<link-do-deploy>`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Páginas
 
-## Expanding the ESLint configuration
+| Rota | Página |
+| --- | --- |
+| `/` | Home |
+| `/produtos` | Lista de Produtos |
+| `/produto/:id` | Detalhe do Produto |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologias
+
+- [React](https://react.dev)
+- [Vite](https://vite.dev)
+- [React Router](https://reactrouter.com)
+- CSS Modules
+- ESLint
+
+## Como rodar
+
+Pré-requisito: [Node.js](https://nodejs.org) 20 ou superior.
+
+```bash
+git clone https://github.com/vitoralvessobral12-commits/Projeto-Front-End.git
+cd Projeto-Front-End
+npm install
+npm run dev
+```
+
+Acesse `http://localhost:5173`.
+
+| Script | Descrição |
+| --- | --- |
+| `npm run dev` | Servidor de desenvolvimento |
+| `npm run build` | Gera a versão de produção em `dist/` |
+| `npm run preview` | Visualiza o build de produção |
+| `npm run lint` | Verifica o código com ESLint |
+
+## Estrutura de pastas
+
+```
+src/
+├── assets/          # imagens e arquivos estáticos
+├── components/      # Header, Footer, ProductCard, Gallery, Layout
+├── pages/           # Home, ProductList, ProductDetail
+├── routes/          # configuração do react-router-dom
+├── App.jsx
+├── index.css        # variáveis de cor e reset global
+└── main.jsx
+```
+
+## Versionamento
+
+O projeto usa Git Flow simplificado (`main`, `develop` e `feature/*`) e Conventional Commits.
+Veja as regras completas em [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Integrantes
+
+- _Nome completo do integrante 1_
+- _Nome completo do integrante 2_
+- _Nome completo do integrante 3_

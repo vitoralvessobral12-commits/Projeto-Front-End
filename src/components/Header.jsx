@@ -1,22 +1,24 @@
-import {Link} from 'react-router-dom';
-import imagem from "../assets/images.jpg"
+import { NavLink } from "react-router-dom";
+import styles from "./Header.module.css";
 
-
-export default function Header(props){
-    return(
-        <>
-    <header>
-        <h1>{props.nomeLoja}</h1>
-        <img src={imagem} alt="imagem e-commerce" />
+export default function Header() {
+  return (
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <NavLink to="/" className={styles.logo}>
+          Digital Store
+        </NavLink>
         <nav>
-            <ul>
-                <li > <Link to="/" >Home</Link> </li>
-                <li > <Link to="/Produto" >Produto</Link> </li>
-                <li > <Link to="/DetalheProduto" >Detalhes dos produtos</Link> </li>
-            </ul>
+          <ul className={styles.menu}>
+            <li>
+              <NavLink to="/" end>Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/produtos">Produtos</NavLink>
+            </li>
+          </ul>
         </nav>
-
+      </div>
     </header>
-        </>
-    )
+  );
 }

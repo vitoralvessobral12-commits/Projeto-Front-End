@@ -1,11 +1,9 @@
-import {Link} from 'react-router-dom';
-import imagem from "../assets/images.jpg"
+import styles from "./Footer.module.css";
 
-export default function Footer (){
-    <>
-     <img src={imagem} alt="imagem e-commerce" />
-            <ul>
-               <li>aqui é o footer</li>
-            </ul>
-    </>
+export default function Footer() {
+  return (
+    <footer className={styles.footer}>
+      <p>© {new Date().getFullYear()} Digital Store</p>
+    </footer>
+  );
 }

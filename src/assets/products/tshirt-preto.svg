@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"><rect width="600" height="400" fill="#ebe8e2"/><ellipse cx="300" cy="358" rx="160" ry="10" fill="#d6d2ca"/>
+<path d="M200 110 L260 88 Q300 116 340 88 L400 110 L462 172 L420 208 L395 186 L395 345 L205 345 L205 186 L180 208 L138 172 Z" fill="#1f1f1f"/>
+<path d="M260 88 Q300 122 340 88 L332 86 Q300 108 268 86 Z" fill="#3a3a3a"/>
+<rect x="245" y="160" width="110" height="30" fill="#ebe8e2"/>
+<text x="300" y="182" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="20" fill="#1f1f1f">VITOR</text>
+</svg>

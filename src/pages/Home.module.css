@@ -17,7 +17,7 @@
 
 .title {
   max-width: 640px;
-  font-family: "Archivo Black", sans-serif;
+  font-family: var(--font-display);
   font-size: 3rem;
   line-height: 1.1;
   color: var(--white);

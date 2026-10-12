@@ -1,4 +1,20 @@
 /* Identidade visual da Vitor Imports: monocromática, estilo streetwear */
+
+/* Fonte de destaque (licença Apache 2.0, em assets/fonts/unkempt) */
+@font-face {
+  font-family: "Unkempt";
+  src: url("./assets/fonts/unkempt/Unkempt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unkempt";
+  src: url("./assets/fonts/unkempt/Unkempt-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
 :root {
   --primary: #0d0d0d;
   --background: #f4f4f2;
@@ -12,7 +28,11 @@
   --light-gray-2: #d6d2ca;
   --white: #ffffff;
 
-  font-family: "Inter", system-ui, sans-serif;
+  /* Destaques (títulos, nomes de produto, preços) x textos normais */
+  --font-display: "Unkempt", cursive;
+  --font-body: "Times New Roman", Times, serif;
+
+  font-family: var(--font-body);
   color: var(--dark-gray-2);
   background: var(--background);
 }
@@ -26,7 +46,15 @@
 h1,
 h2,
 h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
   color: var(--primary);
+}
+
+button,
+input,
+select {
+  font-family: inherit;
 }
 
 a {

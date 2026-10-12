@@ -1,23 +1,35 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   color: var(--dark-gray-2);
 }
 
 .image {
   width: 100%;
+  margin-bottom: 8px;
   border-radius: 4px;
-  background: var(--white);
+  transition: transform 0.2s;
+}
+
+.card:hover .image {
+  transform: scale(1.02);
+}
+
+.category {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--light-gray);
 }
 
 .name {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .price {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
-  color: var(--dark-gray);
+  color: var(--primary);
 }

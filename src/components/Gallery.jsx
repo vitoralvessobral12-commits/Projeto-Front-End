@@ -8,7 +8,7 @@ export default function Gallery({ images = [] }) {
 
   return (
     <div className={styles.gallery}>
-      <img src={images[current]} alt="" className={styles.main} />
+      <img src={images[current]} alt="Foto do produto" className={styles.main} />
       <div className={styles.thumbs}>
         {images.map((src, index) => (
           <button

@@ -1,11 +1,14 @@
-# Digital Store (Drip Store)
+# Vitor Imports
 
-Projeto Front-end de e-commerce desenvolvido no curso de Desenvolvimento Web da Digital College,
-baseado no [design do Figma](https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=22-30)
-e na [documentação oficial](https://github.com/digitalcollegebr/projeto-digital-store).
+E-commerce de **streetwear importado**, desenvolvido como projeto Front-end do curso de
+Desenvolvimento Web da Digital College. A estrutura de páginas segue o
+[design da Drip Store no Figma](https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=22-30)
+e a [documentação oficial](https://github.com/digitalcollegebr/projeto-digital-store), com
+identidade visual própria: logo wordmark, paleta monocromática e ilustrações autorais das peças.
 
-A aplicação é 100% front-end e consome uma API de treino ([DummyJSON](https://dummyjson.com))
-para exibir produtos e imagens.
+A aplicação é 100% front-end. Os produtos ficam em `src/data/products.js` e as ilustrações
+(SVG, em 3 cores: preto, oliva e areia) em `src/assets/products/`. O consumo de uma API de
+treino ([DummyJSON](https://dummyjson.com)) está planejado para a branch `feature/consumo-api`.
 
 ## Deploy
 
@@ -51,8 +54,10 @@ Acesse `http://localhost:5173`.
 
 ```
 src/
-├── assets/          # imagens e arquivos estáticos
-├── components/      # Header, Footer, ProductCard, Gallery, Layout
+├── assets/
+│   └── products/    # ilustrações SVG das peças (3 cores cada)
+├── components/      # Header, Footer, Logo, ProductCard, Gallery, Layout
+├── data/            # catálogo provisório de produtos
 ├── pages/           # Home, ProductList, ProductDetail
 ├── routes/          # configuração do react-router-dom
 ├── App.jsx

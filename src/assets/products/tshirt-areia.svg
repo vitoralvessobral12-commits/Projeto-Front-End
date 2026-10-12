@@ -1,6 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"><rect width="600" height="400" fill="#ebe8e2"/><ellipse cx="300" cy="358" rx="160" ry="10" fill="#d6d2ca"/>
-<path d="M200 110 L260 88 Q300 116 340 88 L400 110 L462 172 L420 208 L395 186 L395 345 L205 345 L205 186 L180 208 L138 172 Z" fill="#c2b28f"/>
-<path d="M260 88 Q300 122 340 88 L332 86 Q300 108 268 86 Z" fill="#a8977a"/>
-<rect x="245" y="160" width="110" height="30" fill="#ebe8e2"/>
-<text x="300" y="182" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="20" fill="#c2b28f">VITOR</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="38%" r="80%">
+    <stop offset="0" stop-color="#f4f1eb"/><stop offset="1" stop-color="#d8d2c6"/>
+  </radialGradient>
+  <linearGradient id="volX" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity=".34"/>
+    <stop offset=".3" stop-color="#fff" stop-opacity=".07"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity=".1"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".36"/>
+  </linearGradient>
+  <linearGradient id="volY" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".12"/>
+    <stop offset=".6" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".3"/>
+  </linearGradient>
+  <linearGradient id="puff" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".22"/>
+    <stop offset=".45" stop-color="#fff" stop-opacity=".04"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".42"/>
+  </linearGradient>
+  <pattern id="rib" width="5" height="10" patternUnits="userSpaceOnUse">
+    <rect width="2" height="10" fill="#000" opacity=".22"/>
+  </pattern>
+  <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2.5"/></filter>
+  <filter id="floor" x="-30%" y="-200%" width="160%" height="500%"><feGaussianBlur stdDeviation="10"/></filter>
+  <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+    <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity=".22"/>
+  </filter>
+</defs>
+<rect width="600" height="400" fill="url(#bg)"/><ellipse cx="300" cy="352" rx="170" ry="12" fill="#000" opacity=".22" filter="url(#floor)"/>
+<path id="tb" d="M190 112 Q250 92 266 90 Q300 110 334 90 Q350 92 410 112 L472 178 Q460 202 432 216 L404 192 L408 336 Q300 348 192 336 L196 192 L168 216 Q140 202 128 178 Z" fill="#cbbd9c" filter="url(#drop)"/>
+<use href="#tb" fill="url(#volX)"/>
+<path d="M266 90 Q300 116 334 90" fill="none" stroke="#bcae8c" stroke-width="10" stroke-linecap="round"/>
+<path d="M266 90 Q300 116 334 90" fill="none" stroke="url(#rib)" stroke-width="10"/>
+<path d="M262 98 Q300 128 338 98" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M134 184 Q148 204 166 210" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M466 184 Q452 204 434 210" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M196 328 Q300 340 404 328" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/>
+<rect x="236" y="150" width="128" height="118" rx="2" fill="#262626" opacity=".92"/>
+<rect x="244" y="158" width="112" height="102" fill="none" stroke="#cbbd9c" stroke-width="2"/>
+<text x="300" y="198" text-anchor="middle" font-family="'Arial Black', Impact, sans-serif" font-size="28" fill="#cbbd9c">VITOR</text>
+<rect x="256" y="206" width="88" height="14" fill="#cbbd9c"/>
+<text x="300" y="217" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="9" letter-spacing="6" fill="#262626">IMPORTS</text>
+<text x="300" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" letter-spacing="3" fill="#cbbd9c">EST. 2026 · STREETWEAR</text>
+<path d="M210 140 Q224 190 214 240" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="5" stroke-linecap="round" filter="url(#soft)"/><path d="M390 140 Q376 190 386 240" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="5" stroke-linecap="round" filter="url(#soft)"/>
+<path d="M250 330 Q262 300 254 280" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="5" stroke-linecap="round" filter="url(#soft)"/><path d="M356 330 Q346 306 352 284" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="5" stroke-linecap="round" filter="url(#soft)"/>
+<path d="M300 280 Q304 300 300 322" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="4" stroke-linecap="round" filter="url(#soft)"/></svg>

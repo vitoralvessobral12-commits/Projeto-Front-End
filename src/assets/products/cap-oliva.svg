@@ -1,8 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"><rect width="600" height="400" fill="#ebe8e2"/><ellipse cx="300" cy="358" rx="160" ry="10" fill="#d6d2ca"/>
-<path d="M170 250 Q500 268 505 296 Q420 306 300 288 Q200 282 170 250 Z" fill="#6b7344"/>
-<path d="M170 252 Q168 120 300 112 Q432 120 430 252 Q300 236 170 252 Z" fill="#4b5320"/>
-<path d="M300 112 Q296 180 300 242 M300 112 Q232 160 228 248 M300 112 Q368 160 372 244" stroke="#6b7344" stroke-width="3" fill="none"/>
-<circle cx="300" cy="113" r="9" fill="#6b7344"/>
-<rect x="246" y="170" width="108" height="34" rx="3" fill="#ebe8e2"/>
-<text x="300" y="195" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="20" fill="#4b5320">VITOR</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="38%" r="80%">
+    <stop offset="0" stop-color="#f4f1eb"/><stop offset="1" stop-color="#d8d2c6"/>
+  </radialGradient>
+  <linearGradient id="volX" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity=".34"/>
+    <stop offset=".3" stop-color="#fff" stop-opacity=".07"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity=".1"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".36"/>
+  </linearGradient>
+  <linearGradient id="volY" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".12"/>
+    <stop offset=".6" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".3"/>
+  </linearGradient>
+  <linearGradient id="puff" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".22"/>
+    <stop offset=".45" stop-color="#fff" stop-opacity=".04"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".42"/>
+  </linearGradient>
+  <pattern id="rib" width="5" height="10" patternUnits="userSpaceOnUse">
+    <rect width="2" height="10" fill="#000" opacity=".22"/>
+  </pattern>
+  <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2.5"/></filter>
+  <filter id="floor" x="-30%" y="-200%" width="160%" height="500%"><feGaussianBlur stdDeviation="10"/></filter>
+  <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+    <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity=".22"/>
+  </filter>
+</defs>
+<rect width="600" height="400" fill="url(#bg)"/><ellipse cx="300" cy="352" rx="190" ry="12" fill="#000" opacity=".22" filter="url(#floor)"/>
+<g filter="url(#drop)">
+<path d="M166 248 Q300 226 438 244 Q504 256 520 292 Q502 304 452 300 Q330 292 218 282 Q172 274 166 248 Z" fill="#5d6540"/>
+<path id="cr" d="M166 250 Q158 128 296 110 Q424 116 438 246 Q300 228 166 250 Z" fill="#4f5634"/>
+</g>
+<use href="#cr" fill="url(#volX)"/>
+<use href="#cr" fill="url(#volY)"/>
+<path d="M438 246 Q504 258 520 292 Q502 304 452 300 Q330 292 218 282 Q172 274 166 250" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="3"/>
+<path d="M196 256 Q310 238 432 252 Q490 262 506 288" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M210 268 Q320 252 440 264 Q480 272 494 290" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M296 110 Q292 176 298 238 M296 110 Q226 150 222 244 M296 110 Q372 150 378 236" fill="none" stroke="#000" stroke-opacity=".3" stroke-width="2.5"/>
+<path d="M290 116 Q286 176 292 236" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M302 116 Q306 176 304 236" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/>
+<ellipse cx="296" cy="111" rx="12" ry="6" fill="#5d6540" stroke="#000" stroke-opacity=".3"/>
+<circle cx="250" cy="150" r="3" fill="#000" opacity=".45"/><circle cx="346" cy="150" r="3" fill="#000" opacity=".45"/>
+<path id="cw" d="M236 204 Q300 188 364 200" fill="none"/>
+<text font-family="'Arial Black', Impact, sans-serif" font-size="26" fill="#ece8df" stroke="#000" stroke-opacity=".15" stroke-width="1"><textPath href="#cw" startOffset="50%" text-anchor="middle">VITOR</textPath></text>
+<path d="M200 200 Q214 150 260 128" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="4" stroke-linecap="round" filter="url(#soft)"/></svg>

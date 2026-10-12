@@ -1,7 +1,7 @@
 
 
 
-export default function DetalheProduto(){
+export default function ProductDetail(){
     return(
         <>
          

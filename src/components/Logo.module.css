@@ -38,3 +38,13 @@
   background: var(--white);
   color: var(--primary);
 }
+
+@media (max-width: 600px) {
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .tag {
+    font-size: 0.45rem;
+  }
+}

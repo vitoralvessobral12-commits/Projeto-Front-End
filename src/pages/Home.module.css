@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 64px;
-  padding: 64px;
+  margin-bottom: clamp(32px, 6vw, 64px);
+  padding: clamp(28px, 6vw, 64px);
   background: var(--primary);
   color: var(--light-gray-2);
 }
@@ -18,7 +18,7 @@
 .title {
   max-width: 640px;
   font-family: var(--font-display);
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1.1;
   color: var(--white);
 }
@@ -42,4 +42,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
 }

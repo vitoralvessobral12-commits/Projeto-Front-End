@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="38%" r="80%">
+    <stop offset="0" stop-color="#f4f1eb"/><stop offset="1" stop-color="#d8d2c6"/>
+  </radialGradient>
+  <linearGradient id="volX" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity=".34"/>
+    <stop offset=".3" stop-color="#fff" stop-opacity=".07"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity=".1"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".36"/>
+  </linearGradient>
+  <linearGradient id="volY" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".12"/>
+    <stop offset=".6" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".3"/>
+  </linearGradient>
+  <linearGradient id="puff" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".22"/>
+    <stop offset=".45" stop-color="#fff" stop-opacity=".04"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".42"/>
+  </linearGradient>
+  <pattern id="rib" width="5" height="10" patternUnits="userSpaceOnUse">
+    <rect width="2" height="10" fill="#000" opacity=".22"/>
+  </pattern>
+  <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2.5"/></filter>
+  <filter id="floor" x="-30%" y="-200%" width="160%" height="500%"><feGaussianBlur stdDeviation="10"/></filter>
+  <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+    <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity=".22"/>
+  </filter>
+</defs>
+<rect width="600" height="400" fill="url(#bg)"/><ellipse cx="300" cy="352" rx="180" ry="12" fill="#000" opacity=".22" filter="url(#floor)"/>
+<path id="hb" d="M196 128 Q250 102 270 98 Q300 114 330 98 Q350 102 404 128 Q442 150 460 212 L488 300 Q470 314 446 310 L420 238 L416 330 Q300 344 184 330 L180 238 L154 310 Q130 314 112 300 L140 212 Q158 150 196 128 Z" fill="#cbbd9c" filter="url(#drop)"/>
+<use href="#hb" fill="url(#volX)"/>
+<path d="M112 300 L154 310 L150 328 Q128 330 108 318 Z M488 300 L446 310 L450 328 Q472 330 492 318 Z" fill="#bcae8c"/>
+<path d="M112 300 L154 310 L150 328 Q128 330 108 318 Z M488 300 L446 310 L450 328 Q472 330 492 318 Z" fill="url(#rib)"/>
+<path d="M184 326 Q300 340 416 326 L416 346 Q300 360 184 346 Z" fill="#bcae8c"/>
+<path d="M184 326 Q300 340 416 326 L416 346 Q300 360 184 346 Z" fill="url(#rib)"/>
+<path d="M252 106 Q244 50 300 38 Q356 50 348 106 Q326 126 300 128 Q274 126 252 106 Z" fill="#bcae8c"/>
+<path d="M252 106 Q244 50 300 38 Q356 50 348 106 Q326 126 300 128 Q274 126 252 106 Z" fill="url(#volX)"/>
+<path d="M272 102 Q276 66 300 60 Q324 66 328 102 Q314 114 300 114 Q286 114 272 102 Z" fill="#000" opacity=".55"/>
+<path d="M258 104 Q300 132 342 104" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M291 118 Q288 152 284 176 M309 118 Q312 152 316 176" stroke="#ebe7de" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+<rect x="280" y="174" width="8" height="12" rx="2" fill="#bdb7aa"/><rect x="312" y="174" width="8" height="12" rx="2" fill="#bdb7aa"/>
+<path id="arch" d="M226 222 Q300 178 374 222" fill="none"/>
+<text font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="34" letter-spacing="3" fill="#262626"><textPath href="#arch" startOffset="50%" text-anchor="middle">VITOR</textPath></text>
+<text x="300" y="236" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="10" letter-spacing="6" fill="#262626">IMPORTS</text>
+<path d="M234 262 L366 262 Q380 292 386 318 L214 318 Q220 292 234 262 Z" fill="#000" opacity=".14"/>
+<path d="M238 266 L362 266 Q374 292 380 314 L220 314 Q226 292 238 266" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M206 160 Q220 200 210 246" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="5" stroke-linecap="round" filter="url(#soft)"/><path d="M394 160 Q380 200 390 246" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="5" stroke-linecap="round" filter="url(#soft)"/>
+<path d="M164 232 Q152 262 140 288" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="5" stroke-linecap="round" filter="url(#soft)"/><path d="M436 232 Q448 262 460 288" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="5" stroke-linecap="round" filter="url(#soft)"/>
+<path d="M262 324 Q270 300 262 284" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="5" stroke-linecap="round" filter="url(#soft)"/><path d="M340 324 Q332 302 340 286" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="5" stroke-linecap="round" filter="url(#soft)"/>
+<path d="M180 180 Q172 220 160 250" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="4" stroke-linecap="round" filter="url(#soft)"/><path d="M300 250 Q296 280 300 300" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="4" stroke-linecap="round" filter="url(#soft)"/></svg>

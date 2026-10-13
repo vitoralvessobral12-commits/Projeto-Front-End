@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="38%" r="80%">
+    <stop offset="0" stop-color="#f4f1eb"/><stop offset="1" stop-color="#d8d2c6"/>
+  </radialGradient>
+  <linearGradient id="volX" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity=".34"/>
+    <stop offset=".3" stop-color="#fff" stop-opacity=".07"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity=".1"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".36"/>
+  </linearGradient>
+  <linearGradient id="volY" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".12"/>
+    <stop offset=".6" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".3"/>
+  </linearGradient>
+  <linearGradient id="puff" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".22"/>
+    <stop offset=".45" stop-color="#fff" stop-opacity=".04"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".42"/>
+  </linearGradient>
+  <pattern id="rib" width="5" height="10" patternUnits="userSpaceOnUse">
+    <rect width="2" height="10" fill="#000" opacity=".22"/>
+  </pattern>
+  <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2.5"/></filter>
+  <filter id="floor" x="-30%" y="-200%" width="160%" height="500%"><feGaussianBlur stdDeviation="10"/></filter>
+  <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+    <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity=".22"/>
+  </filter>
+</defs>
+<rect width="600" height="400" fill="url(#bg)"/><ellipse cx="300" cy="352" rx="200" ry="12" fill="#000" opacity=".22" filter="url(#floor)"/>
+<g filter="url(#drop)">
+<path d="M96 272 Q90 300 104 322 Q112 336 132 336 L478 336 Q506 334 512 306 Q516 282 500 268 Q470 276 440 270 Q400 280 360 274 Q320 282 280 276 Q240 284 200 276 Q160 284 128 274 Q110 268 96 272 Z" fill="#f5f3ef"/>
+<path d="M100 316 L512 310 Q508 336 480 342 L128 342 Q104 340 100 316 Z" fill="#cbc3b4"/>
+<path d="M108 300 Q160 292 200 298 Q260 290 300 298 Q360 290 420 296 Q470 290 506 294" fill="none" stroke="#ddd6ca" stroke-width="2.5"/>
+<path id="up" d="M110 276 Q102 236 118 212 Q130 196 158 194 L214 190 Q236 166 262 156 Q284 150 302 158 Q320 172 332 190 Q392 200 448 222 Q496 240 506 266 Q502 278 480 278 L120 280 Z" fill="#cbbd9c"/>
+</g>
+<use href="#up" fill="url(#volY)"/>
+<path d="M382 202 Q442 218 472 234 Q502 250 506 268 L420 276 Q410 236 382 202 Z" fill="#bcae8c"/>
+<path d="M382 202 Q442 218 472 234 Q502 250 506 268 L420 276 Q410 236 382 202 Z" fill="url(#volY)"/>
+<path d="M110 276 Q102 236 118 212 Q130 196 156 196 Q172 240 166 278 Z" fill="#bcae8c"/>
+<path d="M114 214 L102 190 L126 194 Z" fill="#bcae8c"/>
+<path d="M158 196 Q192 184 216 192 Q202 210 168 212 Z" fill="#000" opacity=".45"/>
+<path d="M266 162 Q264 144 284 140 Q300 142 300 164 Z" fill="#bcae8c"/>
+<path d="M224 188 L300 160 L348 204 L262 224 Z" fill="#bcae8c"/>
+<path d="M172 256 Q262 230 362 222 L368 240 Q266 250 178 274 Z" fill="#262626" opacity=".92"/>
+<path d="M386 208 Q414 240 422 272" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M160 200 Q174 240 168 274" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M230 192 L264 218 L342 204" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M273 214 L245 186 M290 210 L260 181 M308 206 L276 175 M325 202 L291 170" stroke="#262626" stroke-width="4.5" stroke-linecap="round"/>
+<g fill="#000" opacity=".28"><circle cx="440" cy="236" r="2"/><circle cx="452" cy="242" r="2"/><circle cx="464" cy="248" r="2"/><circle cx="446" cy="250" r="2"/><circle cx="458" cy="256" r="2"/><circle cx="470" cy="262" r="2"/></g>
+<path d="M190 214 Q260 206 330 196" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="4" stroke-linecap="round" filter="url(#soft)"/></svg>

@@ -28,6 +28,9 @@
   --light-gray-2: #d6d2ca;
   --white: #ffffff;
 
+  /* Margem lateral fluida: 16px no celular até 100px em telas grandes */
+  --gutter: clamp(16px, 6vw, 100px);
+
   /* Destaques (títulos, nomes de produto, preços) x textos normais */
   --font-display: "Unkempt", cursive;
   --font-body: "Times New Roman", Times, serif;

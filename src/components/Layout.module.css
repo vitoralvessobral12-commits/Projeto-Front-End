@@ -9,5 +9,5 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 40px 100px;
+  padding: clamp(24px, 4vw, 40px) var(--gutter);
 }

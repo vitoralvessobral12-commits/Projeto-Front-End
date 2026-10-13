@@ -1,7 +1,7 @@
 .detail {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 48px;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 48px);
 }
 
 .info {
@@ -35,4 +35,14 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .detail {
+    grid-template-columns: 1fr;
+  }
+
+  .buy {
+    align-self: stretch;
+  }
 }

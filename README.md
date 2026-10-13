@@ -20,6 +20,8 @@ identidade visual própria: logo wordmark, paleta monocromática e ilustrações
 - [Identidade visual](#identidade-visual)
 - [Versionamento (Git e GitHub)](#versionamento-git-e-github)
 - [Deploy na Vercel](#deploy-na-vercel)
+- [Responsividade](#responsividade)
+- [Versões](#versões)
 - [Próximos passos](#próximos-passos)
 - [Integrantes](#integrantes)
 
@@ -36,6 +38,7 @@ identidade visual própria: logo wordmark, paleta monocromática e ilustrações
 - Ordenar por: mais relevantes, menor preço, maior preço e nome (A-Z).
 - Filtrar por uma ou várias categorias ao mesmo tempo, com contador de resultados e botão "Limpar filtros".
 - Galeria: clicar na miniatura troca a imagem principal.
+- **Responsivo:** layout adaptado para celular (até 600px), tablet (até 900px) e computador.
 - Produto inexistente (ex.: `/produto/99`) mostra a mensagem "Produto não encontrado".
 
 ## Tecnologias
@@ -273,10 +276,46 @@ entrega o `index.html` para qualquer rota, e o React Router mostra a página cer
 { "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
 ```
 
+## Responsividade
+
+O site se adapta ao tamanho da tela com duas técnicas de CSS:
+
+1. **Medidas fluidas com `clamp()`:** em vez de valores fixos, margens e fontes crescem e
+   diminuem junto com a tela, dentro de um mínimo e um máximo:
+
+   ```css
+   --gutter: clamp(16px, 6vw, 100px); /* margem lateral: 16px no celular, até 100px */
+   ```
+
+2. **Media queries:** mudam o layout a partir de certas larguras (pontos de quebra):
+
+   | Largura | O que muda |
+   | --- | --- |
+   | até 900px (tablet) | Produtos em 2 colunas, filtro vira faixa acima da lista, detalhe empilha imagem e informações |
+   | até 600px (celular) | Logo e menu menores, rodapé centralizado em coluna |
+
+   ```css
+   @media (max-width: 900px) {
+     .grid { grid-template-columns: repeat(2, 1fr); }
+   }
+   ```
+
+Para testar no computador: abra o site, aperte `F12` e clique no ícone de celular
+(*Toggle device toolbar*) para simular telas de vários tamanhos.
+
+## Versões
+
+As entregas são marcadas com **tags** do Git na branch `main`
+(veja todas em [Tags](https://github.com/vitoralvessobral12-commits/Projeto-Front-End/tags)).
+
+| Versão | O que entrou |
+| --- | --- |
+| `v0.1.0` | Estrutura com Vite + React, rotas, identidade Vitor Imports, catálogo com ilustrações, ordenação e filtro, fontes, layout responsivo e deploy na Vercel |
+
 ## Próximos passos
 
 - [ ] `feature/consumo-api`: buscar produtos de uma API de treino (ex.: DummyJSON)
-- [ ] Versão responsiva para celular
+- [x] Versão responsiva para celular
 - [ ] Busca de produtos no Header
 - [ ] Carrinho de compras
 

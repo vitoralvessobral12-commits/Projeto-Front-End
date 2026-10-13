@@ -6,7 +6,7 @@ Desenvolvimento Web da Digital College. A estrutura de páginas segue o
 e a [documentação oficial](https://github.com/digitalcollegebr/projeto-digital-store), com
 identidade visual própria: logo wordmark, paleta monocromática e ilustrações autorais das peças.
 
-🔗 **Deploy:** _em breve_ `https://<link-da-vercel>`
+🔗 **Deploy:** [projeto-front-end-rose.vercel.app](https://projeto-front-end-rose.vercel.app/)
 
 ---
 
